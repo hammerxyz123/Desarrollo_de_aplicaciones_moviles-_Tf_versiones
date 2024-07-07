@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="160dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="411dp"
+            android:layout_height="147dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.511"
+                app:srcCompat="@drawable/login" />
+
+            <TextView
+                android:id="@+id/filaNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:layout_marginTop="4dp"
+                android:text="Dia de la Madre"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/filaDescripcion"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/filaDescripcion"
+                android:layout_width="197dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="32dp"
+                android:background="#FFEB3B"
+                android:text="Esta festividad sera realizado en la UPN, llevar regalo por estudiante"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/filaEditarFestividad"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.305"
+                app:layout_constraintStart_toEndOf="@+id/imageView" />
+
+            <Button
+                android:id="@+id/filaEditarFestividad"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="168dp"
+                android:backgroundTint="#FFC107"
+                android:text="Editar"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/filaEliminar"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/filaEliminar"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="#E91E63"
+                android:text="Eliminar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/filaEditarFestividad" />
+
+            <TextView
+                android:id="@+id/filaObservacion"
+                android:layout_width="103dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="20dp"
+                android:background="#94F4EB"
+                android:text="El abono se podra pagar en cuotas"
+                android:textAlignment="center"
+                android:textColor="#1D1D1E"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/filaEditarFestividad"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/filaDescripcion"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/filaFecha"
+                android:layout_width="83dp"
+                android:layout_height="26dp"
+                android:backgroundTint="#FA0505"
+                android:textColor="#F60606"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/filaEliminar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.255"
+                app:layout_constraintStart_toEndOf="@+id/filaObservacion"
+                app:layout_constraintTop_toBottomOf="@+id/filaDescripcion"
+                app:layout_constraintVertical_bias="0.866"
+                tools:text="12/12/2024" />
+
+            <ImageButton
+                android:id="@+id/filabtnmapita"
+                android:layout_width="39dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/mapita" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

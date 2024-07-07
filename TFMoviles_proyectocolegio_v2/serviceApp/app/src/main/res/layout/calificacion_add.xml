@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalificacionAdd">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="410dp"
+        android:layout_height="66dp"
+        android:background="#AFAEAE"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="85dp"
+            android:layout_marginVertical="20dp"
+            android:text="Gestión Alumnos > Editar"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="56dp"
+        android:text="Alumno/a:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <EditText
+        android:id="@+id/txtobservacionNota"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="472dp"
+        android:ems="10"
+        android:hint="Ingrese Observación"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <EditText
+        android:id="@+id/txtnota1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="156dp"
+        android:ems="10"
+        android:hint="Ingrese Nota 1"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <EditText
+        android:id="@+id/txtnota2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="228dp"
+        android:ems="10"
+        android:hint="Ingrese Nota 2"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <EditText
+        android:id="@+id/txtnota3"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="304dp"
+        android:ems="10"
+        android:hint="Ingrese Nota 3"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="172dp"
+        android:text="Nota 1:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="320dp"
+        android:text="Nota 3:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="396dp"
+        android:text="Nota 4:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="244dp"
+        android:text="Nota 2:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnGuardarNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#787878"
+        android:text="Guardar Acción"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtobservacionNota" />
+
+    <Button
+        android:id="@+id/btnCancelarNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#F61010"
+        android:text="Cancelar Acción"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtobservacionNota" />
+
+    <EditText
+        android:id="@+id/txtnota_4"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Ingrese Nota 4"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnota3" />
+
+    <TextView
+        android:id="@+id/txtalumnoNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Ernesto Yerson Sosa Paredes"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
