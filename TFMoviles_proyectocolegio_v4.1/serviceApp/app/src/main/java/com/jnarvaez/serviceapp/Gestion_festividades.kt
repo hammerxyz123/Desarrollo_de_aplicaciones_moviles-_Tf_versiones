@@ -32,8 +32,6 @@ class Gestion_festividades : AppCompatActivity() {
         cargarDatos();
     }
 
-
-
     private fun asignarRefencias(){
         rvFestividad = findViewById(R.id.rvFestividad)
         btnNuevo = findViewById(R.id.btnNuevo)
